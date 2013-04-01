@@ -1,12 +1,12 @@
-﻿using Microsoft.Translator.TranslatorService;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
 using System.ServiceModel.Channels;
 using System.Text;
+using Yam.Microsoft.Translator.TranslatorService;
 
-namespace Microsoft.Translator
+namespace Yam.Microsoft.Translator
 {
 	/// <summary>
 	/// http://msdn.microsoft.com/en-us/library/ff512438.aspx

@@ -7,10 +7,9 @@ using System.IO;
 using System.Runtime.Serialization;
 using System.Web;
 using System.Threading;
-using Microsoft.Translator.TranslatorService;
 using System.Diagnostics;
 
-namespace Microsoft.Translator
+namespace Yam.Microsoft.Translator
 {
 	class Program
 	{

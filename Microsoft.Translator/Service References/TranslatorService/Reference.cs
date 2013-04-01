@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Microsoft.Translator.TranslatorService {
+namespace Yam.Microsoft.Translator.TranslatorService {
     using System.Runtime.Serialization;
     using System;
     
@@ -170,7 +170,7 @@ namespace Microsoft.Translator.TranslatorService {
         private string StateField;
         
         [System.Runtime.Serialization.OptionalFieldAttribute()]
-        private Microsoft.Translator.TranslatorService.TranslationMatch[] TranslationsField;
+        private Yam.Microsoft.Translator.TranslatorService.TranslationMatch[] TranslationsField;
         
         [global::System.ComponentModel.BrowsableAttribute(false)]
         public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
@@ -209,7 +209,7 @@ namespace Microsoft.Translator.TranslatorService {
         }
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false)]
-        public Microsoft.Translator.TranslatorService.TranslationMatch[] Translations {
+        public Yam.Microsoft.Translator.TranslatorService.TranslationMatch[] Translations {
             get {
                 return this.TranslationsField;
             }
@@ -782,12 +782,12 @@ namespace Microsoft.Translator.TranslatorService {
         string[] EndGetLanguagesForTranslate(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://api.microsofttranslator.com/V2/LanguageService/GetTranslations", ReplyAction="http://api.microsofttranslator.com/V2/LanguageService/GetTranslationsResponse")]
-        Microsoft.Translator.TranslatorService.GetTranslationsResponse GetTranslations(string appId, string text, string from, string to, int maxTranslations, Microsoft.Translator.TranslatorService.TranslateOptions options);
+        Yam.Microsoft.Translator.TranslatorService.GetTranslationsResponse GetTranslations(string appId, string text, string from, string to, int maxTranslations, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options);
         
         [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://api.microsofttranslator.com/V2/LanguageService/GetTranslations", ReplyAction="http://api.microsofttranslator.com/V2/LanguageService/GetTranslationsResponse")]
-        System.IAsyncResult BeginGetTranslations(string appId, string text, string from, string to, int maxTranslations, Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState);
+        System.IAsyncResult BeginGetTranslations(string appId, string text, string from, string to, int maxTranslations, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState);
         
-        Microsoft.Translator.TranslatorService.GetTranslationsResponse EndGetTranslations(System.IAsyncResult result);
+        Yam.Microsoft.Translator.TranslatorService.GetTranslationsResponse EndGetTranslations(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://api.microsofttranslator.com/V2/LanguageService/Translate", ReplyAction="http://api.microsofttranslator.com/V2/LanguageService/TranslateResponse")]
         string Translate(string appId, string text, string from, string to, string contentType, string category);
@@ -799,23 +799,23 @@ namespace Microsoft.Translator.TranslatorService {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://api.microsofttranslator.com/V2/LanguageService/AddTranslationArray", ReplyAction="http://api.microsofttranslator.com/V2/LanguageService/AddTranslationArrayResponse" +
             "")]
-        void AddTranslationArray(string appId, Microsoft.Translator.TranslatorService.Translation[] translations, string from, string to, Microsoft.Translator.TranslatorService.TranslateOptions options);
+        void AddTranslationArray(string appId, Yam.Microsoft.Translator.TranslatorService.Translation[] translations, string from, string to, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options);
         
         [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://api.microsofttranslator.com/V2/LanguageService/AddTranslationArray", ReplyAction="http://api.microsofttranslator.com/V2/LanguageService/AddTranslationArrayResponse" +
             "")]
-        System.IAsyncResult BeginAddTranslationArray(string appId, Microsoft.Translator.TranslatorService.Translation[] translations, string from, string to, Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState);
+        System.IAsyncResult BeginAddTranslationArray(string appId, Yam.Microsoft.Translator.TranslatorService.Translation[] translations, string from, string to, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState);
         
         void EndAddTranslationArray(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://api.microsofttranslator.com/V2/LanguageService/GetTranslationsArray", ReplyAction="http://api.microsofttranslator.com/V2/LanguageService/GetTranslationsArrayRespons" +
             "e")]
-        Microsoft.Translator.TranslatorService.GetTranslationsResponse[] GetTranslationsArray(string appId, string[] texts, string from, string to, int maxTranslations, Microsoft.Translator.TranslatorService.TranslateOptions options);
+        Yam.Microsoft.Translator.TranslatorService.GetTranslationsResponse[] GetTranslationsArray(string appId, string[] texts, string from, string to, int maxTranslations, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options);
         
         [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://api.microsofttranslator.com/V2/LanguageService/GetTranslationsArray", ReplyAction="http://api.microsofttranslator.com/V2/LanguageService/GetTranslationsArrayRespons" +
             "e")]
-        System.IAsyncResult BeginGetTranslationsArray(string appId, string[] texts, string from, string to, int maxTranslations, Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState);
+        System.IAsyncResult BeginGetTranslationsArray(string appId, string[] texts, string from, string to, int maxTranslations, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState);
         
-        Microsoft.Translator.TranslatorService.GetTranslationsResponse[] EndGetTranslationsArray(System.IAsyncResult result);
+        Yam.Microsoft.Translator.TranslatorService.GetTranslationsResponse[] EndGetTranslationsArray(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://api.microsofttranslator.com/V2/LanguageService/Speak", ReplyAction="http://api.microsofttranslator.com/V2/LanguageService/SpeakResponse")]
         string Speak(string appId, string text, string language, string format, string options);
@@ -826,24 +826,24 @@ namespace Microsoft.Translator.TranslatorService {
         string EndSpeak(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://api.microsofttranslator.com/V2/LanguageService/TranslateArray", ReplyAction="http://api.microsofttranslator.com/V2/LanguageService/TranslateArrayResponse")]
-        Microsoft.Translator.TranslatorService.TranslateArrayResponse[] TranslateArray(string appId, string[] texts, string from, string to, Microsoft.Translator.TranslatorService.TranslateOptions options);
+        Yam.Microsoft.Translator.TranslatorService.TranslateArrayResponse[] TranslateArray(string appId, string[] texts, string from, string to, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options);
         
         [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://api.microsofttranslator.com/V2/LanguageService/TranslateArray", ReplyAction="http://api.microsofttranslator.com/V2/LanguageService/TranslateArrayResponse")]
-        System.IAsyncResult BeginTranslateArray(string appId, string[] texts, string from, string to, Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState);
+        System.IAsyncResult BeginTranslateArray(string appId, string[] texts, string from, string to, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState);
         
-        Microsoft.Translator.TranslatorService.TranslateArrayResponse[] EndTranslateArray(System.IAsyncResult result);
+        Yam.Microsoft.Translator.TranslatorService.TranslateArrayResponse[] EndTranslateArray(System.IAsyncResult result);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://api.microsofttranslator.com/V2/LanguageService/TranslateArray2", ReplyAction="http://api.microsofttranslator.com/V2/LanguageService/TranslateArray2Response")]
-        Microsoft.Translator.TranslatorService.TranslateArray2Response[] TranslateArray2(string appId, string[] texts, string from, string to, Microsoft.Translator.TranslatorService.TranslateOptions options);
+        Yam.Microsoft.Translator.TranslatorService.TranslateArray2Response[] TranslateArray2(string appId, string[] texts, string from, string to, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options);
         
         [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://api.microsofttranslator.com/V2/LanguageService/TranslateArray2", ReplyAction="http://api.microsofttranslator.com/V2/LanguageService/TranslateArray2Response")]
-        System.IAsyncResult BeginTranslateArray2(string appId, string[] texts, string from, string to, Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState);
+        System.IAsyncResult BeginTranslateArray2(string appId, string[] texts, string from, string to, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState);
         
-        Microsoft.Translator.TranslatorService.TranslateArray2Response[] EndTranslateArray2(System.IAsyncResult result);
+        Yam.Microsoft.Translator.TranslatorService.TranslateArray2Response[] EndTranslateArray2(System.IAsyncResult result);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public interface LanguageServiceChannel : Microsoft.Translator.TranslatorService.LanguageService, System.ServiceModel.IClientChannel {
+    public interface LanguageServiceChannel : Yam.Microsoft.Translator.TranslatorService.LanguageService, System.ServiceModel.IClientChannel {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -990,10 +990,10 @@ namespace Microsoft.Translator.TranslatorService {
             this.results = results;
         }
         
-        public Microsoft.Translator.TranslatorService.GetTranslationsResponse Result {
+        public Yam.Microsoft.Translator.TranslatorService.GetTranslationsResponse Result {
             get {
                 base.RaiseExceptionIfNecessary();
-                return ((Microsoft.Translator.TranslatorService.GetTranslationsResponse)(this.results[0]));
+                return ((Yam.Microsoft.Translator.TranslatorService.GetTranslationsResponse)(this.results[0]));
             }
         }
     }
@@ -1028,10 +1028,10 @@ namespace Microsoft.Translator.TranslatorService {
             this.results = results;
         }
         
-        public Microsoft.Translator.TranslatorService.GetTranslationsResponse[] Result {
+        public Yam.Microsoft.Translator.TranslatorService.GetTranslationsResponse[] Result {
             get {
                 base.RaiseExceptionIfNecessary();
-                return ((Microsoft.Translator.TranslatorService.GetTranslationsResponse[])(this.results[0]));
+                return ((Yam.Microsoft.Translator.TranslatorService.GetTranslationsResponse[])(this.results[0]));
             }
         }
     }
@@ -1066,10 +1066,10 @@ namespace Microsoft.Translator.TranslatorService {
             this.results = results;
         }
         
-        public Microsoft.Translator.TranslatorService.TranslateArrayResponse[] Result {
+        public Yam.Microsoft.Translator.TranslatorService.TranslateArrayResponse[] Result {
             get {
                 base.RaiseExceptionIfNecessary();
-                return ((Microsoft.Translator.TranslatorService.TranslateArrayResponse[])(this.results[0]));
+                return ((Yam.Microsoft.Translator.TranslatorService.TranslateArrayResponse[])(this.results[0]));
             }
         }
     }
@@ -1085,17 +1085,17 @@ namespace Microsoft.Translator.TranslatorService {
             this.results = results;
         }
         
-        public Microsoft.Translator.TranslatorService.TranslateArray2Response[] Result {
+        public Yam.Microsoft.Translator.TranslatorService.TranslateArray2Response[] Result {
             get {
                 base.RaiseExceptionIfNecessary();
-                return ((Microsoft.Translator.TranslatorService.TranslateArray2Response[])(this.results[0]));
+                return ((Yam.Microsoft.Translator.TranslatorService.TranslateArray2Response[])(this.results[0]));
             }
         }
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class LanguageServiceClient : System.ServiceModel.ClientBase<Microsoft.Translator.TranslatorService.LanguageService>, Microsoft.Translator.TranslatorService.LanguageService {
+    public partial class LanguageServiceClient : System.ServiceModel.ClientBase<Yam.Microsoft.Translator.TranslatorService.LanguageService>, Yam.Microsoft.Translator.TranslatorService.LanguageService {
         
         private BeginOperationDelegate onBeginAddTranslationDelegate;
         
@@ -1671,17 +1671,17 @@ namespace Microsoft.Translator.TranslatorService {
                         appId}, this.onEndGetLanguagesForTranslateDelegate, this.onGetLanguagesForTranslateCompletedDelegate, userState);
         }
         
-        public Microsoft.Translator.TranslatorService.GetTranslationsResponse GetTranslations(string appId, string text, string from, string to, int maxTranslations, Microsoft.Translator.TranslatorService.TranslateOptions options) {
+        public Yam.Microsoft.Translator.TranslatorService.GetTranslationsResponse GetTranslations(string appId, string text, string from, string to, int maxTranslations, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options) {
             return base.Channel.GetTranslations(appId, text, from, to, maxTranslations, options);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public System.IAsyncResult BeginGetTranslations(string appId, string text, string from, string to, int maxTranslations, Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState) {
+        public System.IAsyncResult BeginGetTranslations(string appId, string text, string from, string to, int maxTranslations, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState) {
             return base.Channel.BeginGetTranslations(appId, text, from, to, maxTranslations, options, callback, asyncState);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public Microsoft.Translator.TranslatorService.GetTranslationsResponse EndGetTranslations(System.IAsyncResult result) {
+        public Yam.Microsoft.Translator.TranslatorService.GetTranslationsResponse EndGetTranslations(System.IAsyncResult result) {
             return base.Channel.EndGetTranslations(result);
         }
         
@@ -1691,12 +1691,12 @@ namespace Microsoft.Translator.TranslatorService {
             string from = ((string)(inValues[2]));
             string to = ((string)(inValues[3]));
             int maxTranslations = ((int)(inValues[4]));
-            Microsoft.Translator.TranslatorService.TranslateOptions options = ((Microsoft.Translator.TranslatorService.TranslateOptions)(inValues[5]));
+            Yam.Microsoft.Translator.TranslatorService.TranslateOptions options = ((Yam.Microsoft.Translator.TranslatorService.TranslateOptions)(inValues[5]));
             return this.BeginGetTranslations(appId, text, from, to, maxTranslations, options, callback, asyncState);
         }
         
         private object[] OnEndGetTranslations(System.IAsyncResult result) {
-            Microsoft.Translator.TranslatorService.GetTranslationsResponse retVal = this.EndGetTranslations(result);
+            Yam.Microsoft.Translator.TranslatorService.GetTranslationsResponse retVal = this.EndGetTranslations(result);
             return new object[] {
                     retVal};
         }
@@ -1708,11 +1708,11 @@ namespace Microsoft.Translator.TranslatorService {
             }
         }
         
-        public void GetTranslationsAsync(string appId, string text, string from, string to, int maxTranslations, Microsoft.Translator.TranslatorService.TranslateOptions options) {
+        public void GetTranslationsAsync(string appId, string text, string from, string to, int maxTranslations, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options) {
             this.GetTranslationsAsync(appId, text, from, to, maxTranslations, options, null);
         }
         
-        public void GetTranslationsAsync(string appId, string text, string from, string to, int maxTranslations, Microsoft.Translator.TranslatorService.TranslateOptions options, object userState) {
+        public void GetTranslationsAsync(string appId, string text, string from, string to, int maxTranslations, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options, object userState) {
             if ((this.onBeginGetTranslationsDelegate == null)) {
                 this.onBeginGetTranslationsDelegate = new BeginOperationDelegate(this.OnBeginGetTranslations);
             }
@@ -1791,12 +1791,12 @@ namespace Microsoft.Translator.TranslatorService {
                         category}, this.onEndTranslateDelegate, this.onTranslateCompletedDelegate, userState);
         }
         
-        public void AddTranslationArray(string appId, Microsoft.Translator.TranslatorService.Translation[] translations, string from, string to, Microsoft.Translator.TranslatorService.TranslateOptions options) {
+        public void AddTranslationArray(string appId, Yam.Microsoft.Translator.TranslatorService.Translation[] translations, string from, string to, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options) {
             base.Channel.AddTranslationArray(appId, translations, from, to, options);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public System.IAsyncResult BeginAddTranslationArray(string appId, Microsoft.Translator.TranslatorService.Translation[] translations, string from, string to, Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState) {
+        public System.IAsyncResult BeginAddTranslationArray(string appId, Yam.Microsoft.Translator.TranslatorService.Translation[] translations, string from, string to, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState) {
             return base.Channel.BeginAddTranslationArray(appId, translations, from, to, options, callback, asyncState);
         }
         
@@ -1807,10 +1807,10 @@ namespace Microsoft.Translator.TranslatorService {
         
         private System.IAsyncResult OnBeginAddTranslationArray(object[] inValues, System.AsyncCallback callback, object asyncState) {
             string appId = ((string)(inValues[0]));
-            Microsoft.Translator.TranslatorService.Translation[] translations = ((Microsoft.Translator.TranslatorService.Translation[])(inValues[1]));
+            Yam.Microsoft.Translator.TranslatorService.Translation[] translations = ((Yam.Microsoft.Translator.TranslatorService.Translation[])(inValues[1]));
             string from = ((string)(inValues[2]));
             string to = ((string)(inValues[3]));
-            Microsoft.Translator.TranslatorService.TranslateOptions options = ((Microsoft.Translator.TranslatorService.TranslateOptions)(inValues[4]));
+            Yam.Microsoft.Translator.TranslatorService.TranslateOptions options = ((Yam.Microsoft.Translator.TranslatorService.TranslateOptions)(inValues[4]));
             return this.BeginAddTranslationArray(appId, translations, from, to, options, callback, asyncState);
         }
         
@@ -1826,11 +1826,11 @@ namespace Microsoft.Translator.TranslatorService {
             }
         }
         
-        public void AddTranslationArrayAsync(string appId, Microsoft.Translator.TranslatorService.Translation[] translations, string from, string to, Microsoft.Translator.TranslatorService.TranslateOptions options) {
+        public void AddTranslationArrayAsync(string appId, Yam.Microsoft.Translator.TranslatorService.Translation[] translations, string from, string to, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options) {
             this.AddTranslationArrayAsync(appId, translations, from, to, options, null);
         }
         
-        public void AddTranslationArrayAsync(string appId, Microsoft.Translator.TranslatorService.Translation[] translations, string from, string to, Microsoft.Translator.TranslatorService.TranslateOptions options, object userState) {
+        public void AddTranslationArrayAsync(string appId, Yam.Microsoft.Translator.TranslatorService.Translation[] translations, string from, string to, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options, object userState) {
             if ((this.onBeginAddTranslationArrayDelegate == null)) {
                 this.onBeginAddTranslationArrayDelegate = new BeginOperationDelegate(this.OnBeginAddTranslationArray);
             }
@@ -1848,17 +1848,17 @@ namespace Microsoft.Translator.TranslatorService {
                         options}, this.onEndAddTranslationArrayDelegate, this.onAddTranslationArrayCompletedDelegate, userState);
         }
         
-        public Microsoft.Translator.TranslatorService.GetTranslationsResponse[] GetTranslationsArray(string appId, string[] texts, string from, string to, int maxTranslations, Microsoft.Translator.TranslatorService.TranslateOptions options) {
+        public Yam.Microsoft.Translator.TranslatorService.GetTranslationsResponse[] GetTranslationsArray(string appId, string[] texts, string from, string to, int maxTranslations, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options) {
             return base.Channel.GetTranslationsArray(appId, texts, from, to, maxTranslations, options);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public System.IAsyncResult BeginGetTranslationsArray(string appId, string[] texts, string from, string to, int maxTranslations, Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState) {
+        public System.IAsyncResult BeginGetTranslationsArray(string appId, string[] texts, string from, string to, int maxTranslations, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState) {
             return base.Channel.BeginGetTranslationsArray(appId, texts, from, to, maxTranslations, options, callback, asyncState);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public Microsoft.Translator.TranslatorService.GetTranslationsResponse[] EndGetTranslationsArray(System.IAsyncResult result) {
+        public Yam.Microsoft.Translator.TranslatorService.GetTranslationsResponse[] EndGetTranslationsArray(System.IAsyncResult result) {
             return base.Channel.EndGetTranslationsArray(result);
         }
         
@@ -1868,12 +1868,12 @@ namespace Microsoft.Translator.TranslatorService {
             string from = ((string)(inValues[2]));
             string to = ((string)(inValues[3]));
             int maxTranslations = ((int)(inValues[4]));
-            Microsoft.Translator.TranslatorService.TranslateOptions options = ((Microsoft.Translator.TranslatorService.TranslateOptions)(inValues[5]));
+            Yam.Microsoft.Translator.TranslatorService.TranslateOptions options = ((Yam.Microsoft.Translator.TranslatorService.TranslateOptions)(inValues[5]));
             return this.BeginGetTranslationsArray(appId, texts, from, to, maxTranslations, options, callback, asyncState);
         }
         
         private object[] OnEndGetTranslationsArray(System.IAsyncResult result) {
-            Microsoft.Translator.TranslatorService.GetTranslationsResponse[] retVal = this.EndGetTranslationsArray(result);
+            Yam.Microsoft.Translator.TranslatorService.GetTranslationsResponse[] retVal = this.EndGetTranslationsArray(result);
             return new object[] {
                     retVal};
         }
@@ -1885,11 +1885,11 @@ namespace Microsoft.Translator.TranslatorService {
             }
         }
         
-        public void GetTranslationsArrayAsync(string appId, string[] texts, string from, string to, int maxTranslations, Microsoft.Translator.TranslatorService.TranslateOptions options) {
+        public void GetTranslationsArrayAsync(string appId, string[] texts, string from, string to, int maxTranslations, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options) {
             this.GetTranslationsArrayAsync(appId, texts, from, to, maxTranslations, options, null);
         }
         
-        public void GetTranslationsArrayAsync(string appId, string[] texts, string from, string to, int maxTranslations, Microsoft.Translator.TranslatorService.TranslateOptions options, object userState) {
+        public void GetTranslationsArrayAsync(string appId, string[] texts, string from, string to, int maxTranslations, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options, object userState) {
             if ((this.onBeginGetTranslationsArrayDelegate == null)) {
                 this.onBeginGetTranslationsArrayDelegate = new BeginOperationDelegate(this.OnBeginGetTranslationsArray);
             }
@@ -1966,17 +1966,17 @@ namespace Microsoft.Translator.TranslatorService {
                         options}, this.onEndSpeakDelegate, this.onSpeakCompletedDelegate, userState);
         }
         
-        public Microsoft.Translator.TranslatorService.TranslateArrayResponse[] TranslateArray(string appId, string[] texts, string from, string to, Microsoft.Translator.TranslatorService.TranslateOptions options) {
+        public Yam.Microsoft.Translator.TranslatorService.TranslateArrayResponse[] TranslateArray(string appId, string[] texts, string from, string to, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options) {
             return base.Channel.TranslateArray(appId, texts, from, to, options);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public System.IAsyncResult BeginTranslateArray(string appId, string[] texts, string from, string to, Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState) {
+        public System.IAsyncResult BeginTranslateArray(string appId, string[] texts, string from, string to, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState) {
             return base.Channel.BeginTranslateArray(appId, texts, from, to, options, callback, asyncState);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public Microsoft.Translator.TranslatorService.TranslateArrayResponse[] EndTranslateArray(System.IAsyncResult result) {
+        public Yam.Microsoft.Translator.TranslatorService.TranslateArrayResponse[] EndTranslateArray(System.IAsyncResult result) {
             return base.Channel.EndTranslateArray(result);
         }
         
@@ -1985,12 +1985,12 @@ namespace Microsoft.Translator.TranslatorService {
             string[] texts = ((string[])(inValues[1]));
             string from = ((string)(inValues[2]));
             string to = ((string)(inValues[3]));
-            Microsoft.Translator.TranslatorService.TranslateOptions options = ((Microsoft.Translator.TranslatorService.TranslateOptions)(inValues[4]));
+            Yam.Microsoft.Translator.TranslatorService.TranslateOptions options = ((Yam.Microsoft.Translator.TranslatorService.TranslateOptions)(inValues[4]));
             return this.BeginTranslateArray(appId, texts, from, to, options, callback, asyncState);
         }
         
         private object[] OnEndTranslateArray(System.IAsyncResult result) {
-            Microsoft.Translator.TranslatorService.TranslateArrayResponse[] retVal = this.EndTranslateArray(result);
+            Yam.Microsoft.Translator.TranslatorService.TranslateArrayResponse[] retVal = this.EndTranslateArray(result);
             return new object[] {
                     retVal};
         }
@@ -2002,11 +2002,11 @@ namespace Microsoft.Translator.TranslatorService {
             }
         }
         
-        public void TranslateArrayAsync(string appId, string[] texts, string from, string to, Microsoft.Translator.TranslatorService.TranslateOptions options) {
+        public void TranslateArrayAsync(string appId, string[] texts, string from, string to, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options) {
             this.TranslateArrayAsync(appId, texts, from, to, options, null);
         }
         
-        public void TranslateArrayAsync(string appId, string[] texts, string from, string to, Microsoft.Translator.TranslatorService.TranslateOptions options, object userState) {
+        public void TranslateArrayAsync(string appId, string[] texts, string from, string to, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options, object userState) {
             if ((this.onBeginTranslateArrayDelegate == null)) {
                 this.onBeginTranslateArrayDelegate = new BeginOperationDelegate(this.OnBeginTranslateArray);
             }
@@ -2024,17 +2024,17 @@ namespace Microsoft.Translator.TranslatorService {
                         options}, this.onEndTranslateArrayDelegate, this.onTranslateArrayCompletedDelegate, userState);
         }
         
-        public Microsoft.Translator.TranslatorService.TranslateArray2Response[] TranslateArray2(string appId, string[] texts, string from, string to, Microsoft.Translator.TranslatorService.TranslateOptions options) {
+        public Yam.Microsoft.Translator.TranslatorService.TranslateArray2Response[] TranslateArray2(string appId, string[] texts, string from, string to, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options) {
             return base.Channel.TranslateArray2(appId, texts, from, to, options);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public System.IAsyncResult BeginTranslateArray2(string appId, string[] texts, string from, string to, Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState) {
+        public System.IAsyncResult BeginTranslateArray2(string appId, string[] texts, string from, string to, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options, System.AsyncCallback callback, object asyncState) {
             return base.Channel.BeginTranslateArray2(appId, texts, from, to, options, callback, asyncState);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public Microsoft.Translator.TranslatorService.TranslateArray2Response[] EndTranslateArray2(System.IAsyncResult result) {
+        public Yam.Microsoft.Translator.TranslatorService.TranslateArray2Response[] EndTranslateArray2(System.IAsyncResult result) {
             return base.Channel.EndTranslateArray2(result);
         }
         
@@ -2043,12 +2043,12 @@ namespace Microsoft.Translator.TranslatorService {
             string[] texts = ((string[])(inValues[1]));
             string from = ((string)(inValues[2]));
             string to = ((string)(inValues[3]));
-            Microsoft.Translator.TranslatorService.TranslateOptions options = ((Microsoft.Translator.TranslatorService.TranslateOptions)(inValues[4]));
+            Yam.Microsoft.Translator.TranslatorService.TranslateOptions options = ((Yam.Microsoft.Translator.TranslatorService.TranslateOptions)(inValues[4]));
             return this.BeginTranslateArray2(appId, texts, from, to, options, callback, asyncState);
         }
         
         private object[] OnEndTranslateArray2(System.IAsyncResult result) {
-            Microsoft.Translator.TranslatorService.TranslateArray2Response[] retVal = this.EndTranslateArray2(result);
+            Yam.Microsoft.Translator.TranslatorService.TranslateArray2Response[] retVal = this.EndTranslateArray2(result);
             return new object[] {
                     retVal};
         }
@@ -2060,11 +2060,11 @@ namespace Microsoft.Translator.TranslatorService {
             }
         }
         
-        public void TranslateArray2Async(string appId, string[] texts, string from, string to, Microsoft.Translator.TranslatorService.TranslateOptions options) {
+        public void TranslateArray2Async(string appId, string[] texts, string from, string to, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options) {
             this.TranslateArray2Async(appId, texts, from, to, options, null);
         }
         
-        public void TranslateArray2Async(string appId, string[] texts, string from, string to, Microsoft.Translator.TranslatorService.TranslateOptions options, object userState) {
+        public void TranslateArray2Async(string appId, string[] texts, string from, string to, Yam.Microsoft.Translator.TranslatorService.TranslateOptions options, object userState) {
             if ((this.onBeginTranslateArray2Delegate == null)) {
                 this.onBeginTranslateArray2Delegate = new BeginOperationDelegate(this.OnBeginTranslateArray2);
             }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 
-namespace Microsoft.Translator
+namespace Yam.Microsoft.Translator
 {
 	[DataContract]
 	public class AdmAccessToken

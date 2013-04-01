@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Microsoft.Translator</id>
+        <version>0.1.2</version>
+        <title>Microsoft.Translator</title>
+        <authors>miaodadao</authors>
+        <owners />
+        <projectUrl>https://code.google.com/p/microsoft-translator/</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>https://datamarket.azure.com/dataset/bing/microsofttranslator</description>
+        <summary>Easy to use Microsoft Translator</summary>
+        <tags>c# i18n translator</tags>
+    </metadata>
+    <files>
+        <file src="Translator\bin\Release\Translator.exe" target="content\Translator.exe" />
+        <file src="Translator\bin\Release\Translator.exe.config" target="content\Translator.exe.config" />
+        <file src="Translator\bin\Release\Translator.pdb" target="content\Translator.pdb" />
+        <file src="Translator\bin\Release\Microsoft.Translator.dll" target="lib\Microsoft.Translator.dll" />
+        <file src="Translator\bin\Release\Microsoft.Translator.pdb" target="lib\Microsoft.Translator.pdb" />
+        <file src="Translator\bin\Release\Microsoft.Translator.xml" target="lib\Microsoft.Translator.xml" />
+    </files>
+</package>
